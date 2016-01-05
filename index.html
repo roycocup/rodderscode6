@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Rodrigo Dias Website</title>
-    <!-- <link href="http://cs.stanford.edu/people/karpathy/css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"></link>
+    
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"></link>
     <link href="main.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
 </head>
 
-<body onload="start()">
+<body>
+
     <div id="header" class="bg1">
         <div id="headerblob">
             <img src="me2.jpg" class="img-circle imgme">
@@ -41,6 +42,8 @@
             </div>
         </div>
     </div>
+
+    <!-- timeline -->
     <div class="container">
         <div id="timeline">
             <div class="timelineitem">
@@ -54,131 +57,87 @@
                 <div class="tdesc">Developing websites for Samsung, Ford and other web 2.0</div>
             </div>
             <div class="timelineitem">
-                <div class="tdate">2011-2014</div>
+                <div class="tdate">2007-2014</div>
                 <div class="ttitle">Several companies</div>
-                <div class="tdesc">Dont even know what I did then but also started my own company</div>
+                <div class="tdesc">Many websites for intranets and extranets</div>
             </div>
         </div>
     </div>
-    <div class="container" style="font-size:18px; font-weight:300;margin-top:50px;margin-bottom:50px;">
-        <b>Bio</b> I am a passionate programming enthusiast always looking for the latest technology which can bring us the best and easiest solutions. 
-        <br> I love all sorts of programming languages and technologies from Git to Bower to Java to Rust and Go. 
+
+    <!-- Bio -->
+    <div class="container bio">
+        <b>Bio</b> 
+        I am a passionate programming enthusiast always looking for the latest technology which can bring us the best and easiest solutions. 
+        <br> 
+        I love all sorts of programming languages and technologies from Git to Bower to Java to Rust and Go. 
         <br>
-        <br> On a side for fun I <a href="http://karpathy.github.io/">blog</a>, <a href="https://twitter.com/karpathy">tweet</a>, and maintain several Deep Learning libraries written in Javascript (e.g. <a href="http://convnetjs.com/">ConvNetJS</a>, <a href="http://cs.stanford.edu/people/karpathy/recurrentjs/">RecurrentJS</a>, <a href="http://cs.stanford.edu/people/karpathy/reinforcejs/">REINFORCEjs</a>, <a href="http://cs.stanford.edu/people/karpathy/tsnejs/">t-sneJS</a>). I am also sometimes jokingly referred to as <i>the</i> reference human for ImageNet (<a href="http://karpathy.github.io/2014/09/02/what-i-learned-from-competing-against-a-convnet-on-imagenet/">post</a> :)), and I create those nice-looking conference proceedings LDA visualization pages each year (<a href="http://cs.stanford.edu/people/karpathy/nips2015/">NIPS 2015 example</a>). I also recently expanded on this with <a href="http://www.arxiv-sanity.com/">arxiv-sanity.com</a>, which lets you search and sort through 10,000+ CV/LG/CL Arxiv papers over the last 3 years in the same pretty format.
+        <br> 
+        I am also an streaming ethusiast so sometimes you can find me on <a href="https://www.livecoding.tv/roycocup/" target="_blank">Livecoding</a> or on <a href="http://twitch.tv/roycocup/" target="_blank">Twitch</a>.
     </div>
-    <hr class="soft">
 
     <hr class="soft">
+
     <div class="container">
-        <h2>Personal Projects</h2>
+        <h2>In Progress</h2>
         <div class="row">
+
             <div class="col-md-4">
                 <div class="pp">
-                    <a href="http://cs.stanford.edu/people/karpathy/convnetjs/">
+                    <a href="https://github.com/roycocup/LFFApp">
                         <img src="img/convnetlogo3.png" class="img-circle imgb">
                     </a>
-                    <div class="ppt">ConvNetJS</div>
+                    <div class="ppt">LFF Android App</div>
                     <div class="ppd">
-                        ConvNetJS is Deep Learning / Neural Networks library written entirely in Javascript. This enables nice web-based demos that train Convolutional Neural Networks (or ordinary ones) entirely in the browser. Many web demos included. I did an interview with Data Science Weekly about the library and some of its back story <a href="http://www.datascienceweekly.org/data-scientist-interviews/training-deep-learning-models-browser-andrej-karpathy-interview">here</a>.
+                        This is my first android app that I did just to pick up some native Android / Java techniques. Its not the most amazing app in the world but it shows the time table and the news for the London Fight Factory gym in old street where I practice my Jiu Jitsu classes for over 5 years. 
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="pp">
-                    <a href="http://cs.stanford.edu/people/karpathy/reinforcejs/">
+                    <a href="https://github.com/roycocup/mdpp">
                         <img src="img/mdpdp.jpeg" class="img-circle imgb">
                     </a>
-                    <div class="ppt">REINFORCEjs</div>
+                    <div class="ppt">Markdown Compiler</div>
                     <div class="ppd">
-                        <a href="http://cs.stanford.edu/people/karpathy/reinforcejs/">REINFORCEjs</a> is a Reinforcement Learning library that implements several common RL algorithms supported with fun web demos. The library includes DP,TD,DQN algorithms and sketches of stochastic/deterministic Policy Gradients.
+                        This is a program I wrote in java that compiles Markdown text file into an html file. Its aimed at parsing / compiling into RTF and PDF in the future. This was a learning project and its still in progress. So far it can only handle headers, normal text and lists. 
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
                 <div class="pp">
-                    <a href="http://www.arxiv-sanity.com/">
+                    <a href="https://github.com/roycocup/java-chat">
                         <img src="img/sanity.jpeg" class="img-circle imgb">
                     </a>
-                    <div class="ppt">Arxiv Sanity Preserver</div>
+                    <div class="ppt">Java Chat</div>
                     <div class="ppd">
-                        There are way too many Arxiv papers. This project is an attempt to make them searchable and sortable in the pretty interface. The <i>sort by tfidf similarity</i> feature works very well and can be quite useful. My aim is to expand on this project over time, e.g. add a social layer, or create custom paper classifiers / notifications, etc.
+                        The Java Chat program is a fork from a project that was abandoned some years ago and I would like to keep it going. Its just a simple chat interface built in java, but it can be transformed into a destributed chat system and eventually power up company chat or a larger network.
                     </div>
                 </div>
             </div>
         </div>
-        <div class="showmore" id="showmoreprojects">
-            show more
-        </div>
-        <div id="moreprojects">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="pp">
-                        <a href="https://github.com/karpathy/ulogme">
-                            <img src="img/ulogme-small.jpeg" class="img-circle imgsm">
-                        </a>
-                        <div class="ppt">ulogme</div>
-                        <div class="ppd">
-                            ulogme tracks your active windows / keystroke frequencies / notes throughout the entire day and visualizes the results in beautiful d3js timelines. Check out my <a href="http://karpathy.github.io/2014/08/03/quantifying-productivity/">blog post introducing the project</a> to learn more.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
+
     <hr class="soft">
+
     <div class="container">
-        <h2>Current Work</h2>
-        <div id="row">
-            <ul>
-                <li>Java</li>
-                <li>Android</li>
-                <li>Python</li>
-            </ul>
+        <h2>Past Work</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="ppt">Websites</div>
+            </div>
         </div>
+        
     </div>
-    <!-- place js at end for faster loading -->
-    <script src="jquery-1.11.1.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>
-    var more_projects_shown = false;
 
-    function start() {
-        $("#showmoreprojects").click(function() {
-            if (!more_projects_shown) {
-                $("#moreprojects").slideDown('fast', function() {
-                    $("#showmoreprojects").text('hide');
-                });
-                more_projects_shown = true;
-            } else {
-                $("#moreprojects").slideUp('fast', function() {
-                    $("#showmoreprojects").text('show more');
-                });
-                more_projects_shown = false;
-            }
-        });
 
-        var more_pubs_shown = false;
-        $("#showmorepubs").click(function() {
-            if (!more_pubs_shown) {
-                $("#morepubs").slideDown('fast', function() {
-                    $("#showmorepubs").text('hide');
-                });
-                more_pubs_shown = true;
-            } else {
-                $("#morepubs").slideUp('fast', function() {
-                    $("#showmorepubs").text('show more');
-                });
-                more_pubs_shown = false;
-            }
-        });
 
-    }
-    </script>
-    <script>
-	    //blogger
-	    var apiKey = "AIzaSyDkucNeUpB5r5Z_THBJKzHyvd5KvswDMu0";
-    </script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>    
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
+  
 </body>
 
 </html>
