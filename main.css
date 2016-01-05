@@ -20,6 +20,33 @@ body {
 .bg2 {
   background-color: #299DB6; }
 
+@media (min-width: 768px) {
+  .nav {
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    position: fixed;
+    z-index: 100; }
+    .nav .navitems {
+      margin-right: 1em;
+      line-height: 3.5em; }
+      .nav .navitems a :hover {
+        background-color: purple; }
+      .nav .navitems a .navitem {
+        width: 100px;
+        float: right;
+        font-size: 1.2em;
+        color: #ccc;
+        padding-right: 5em;
+        text-align: center; } }
+@media (max-width: 768px) {
+  .nav {
+    height: 50px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; } }
 #headerblob {
   position: absolute;
   left: 20%;
@@ -108,7 +135,8 @@ li {
 
 #timeline {
   font-size: 20px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 50px; }
 
 @media (min-width: 768px) {
   .timelineitem {
