@@ -37,7 +37,17 @@
 		top: 0; 
 		left: 0;
 		.navitems{
-				
+			width: 100px;
+			float: right;
+			font-size: 1.2em;
+			padding-right: 5em;
+			a{
+				color: #ccc;
+				text-decoration: none;
+				&:hover {
+					border-bottom: 1px solid red; 
+				}	
+			}
 		}
 	}
 }
