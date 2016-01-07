@@ -7,13 +7,15 @@
 		position:fixed;
 		z-index: 100;
 		.navitems{
-			margin-right: 1em;
+			position: absolute; 
+			right: 5px;
 			line-height: 3.5em;
+			display: inline;
 			.navitem {
 				width: 100px;
-				float: right;
 				font-size: 1.2em;
 				padding-right: 5em;
+				text-decoration: none;
 				a{
 					color: #ccc;
 					text-decoration: none;
