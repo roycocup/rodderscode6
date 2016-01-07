@@ -1,0 +1,103 @@
+    ____            __     _                ____  _               _______    __
+   / __ \____  ____/ /____(_)___ _____     / __ \(_)___ ______   / ____/ |  / /
+  / /_/ / __ \/ __  / ___/ / __ `/ __ \   / / / / / __ `/ ___/  / /    | | / / 
+ / _, _/ /_/ / /_/ / /  / / /_/ / /_/ /  / /_/ / / /_/ (__  )  / /___  | |/ /  
+/_/ |_|\____/\__,_/_/  /_/\__, /\____/  /_____/_/\__,_/____/   \____/  |___/   
+                         /____/                                                
+            
+╔══════════════════╗
+║ PERSONAL DETAILS ║
+╚══════════════════╝
+  Rodrigo Dias
+  Flat 5, Paymal house, London, E1 3HR
+  email: rodrigo.pitta@gmail.com
+  10th September 1976 (39), Portugal
+
+
+╔════════════════════════════╗
+║ MAIN PROGRAMMING LANGUAGES ║
+╚════════════════════════════╝
+  * PHP		░░░░▒▒▓███100%
+  * Sql		░░░░▒▒▓█85%
+  * Java	░░░░▒▒▓75%
+  * Javascript 	░░░░▒▒60%
+  * Python	░░░░▒43%
+  
+
+╔════════════════════════════════════════╗
+║ OTHER PROGRAMMING LANGUAGES (EXPOSURE) ║
+╚════════════════════════════════════════╝
+  * C & C++						
+  * Shell Script (Bash)			
+
+╔═══════════════════════╗
+║ PREFERRED FRAMEWORKS  ║
+╚═══════════════════════╝
+  * Laravel
+  * Django
+  * CodeIgniter
+  * Wordpress
+  * Symphony
+
+╔═══════════════════╗
+║ OPERATING SYSTEMS ║
+╚═══════════════════╝
+  * Linux     ♥♥♥♥♥♥♥♥♥♥
+  * Mac OS    ♥♥♥♥♥♥♥♥
+  * Windows   ♥♥♥♥♥
+
+
+
+╔═════════════════╗
+║ WORK EXPERIENCE ║
+╚═════════════════╝
+
++---------------+-----------------+----------+---------------------+
+| Title         | Company         | Location | Dates               |
++---------------+-----------------+----------+---------------------+
+| PHP Developer | Liberty Tech    | London   | Mar 2014 - Aug 2015 |
+| PHP Developer | Freelance       | London   | Aug 2013 - Mar 2014 |
+| PHP Developer | Premier IT      | London   | Jul 2012 - Aug 2013 |
+| PHP Developer | Pilotbean       | London   | Nov 2011 - Apr 2012 |
+| PHP Developer | Helastel        | Bristol  | Mar 2011 - Sep 2011 |
+| PHP Developer | CabinetUK       | London   | Jul 2008 - Aug 2010 |
+| PHP Developer | Markettiers 4DC | London   | Jan 2008 - May 2008 |
+| PHP Developer | Migs On         | London   | Nov 2007 - Jan 2008 |
+| Owner         | Frontspace      | Portugal | Apr 2005 - Jul 2007 |
+| 3D Modeller   | Fullscreen      | Portugal | Jun 2000 - Apr 2004 |
++---------------+-----------------+----------+---------------------+
+
+
+╔══════════╗
+║ OVERVIEW ║
+╚══════════╝
+
+  * Hardcore programming languages enthusiast. Love everything from C to Arnold C (https://github.com/lhartikk/ArnoldC) including Python, Java, C++, Go, Javascript, PHP, R,  Rust or D
+
+  * Currently working on some desktop projects in Core J2SE and on an Android App. Feel free to browse my github (https://github.com/roycocup).
+
+  * Responsible for bringing innovation to many of the workplaces where I have worked, such as Git to LibertyTech, Bash Shell script automations for SVN at PremierIT, restful API at CabinetUK.
+
+  * Worked in commercial PHP-Mysql for over 10 years using a mixed set of frameworks and development methodologies. 
+
+  * Experience working with high street renown clients such as Vodafone (Markettiers4dc), Royal Caribbean (CabinetUK), Royal Medical Colleges, Engineering and Directors houses in UK (PremierIT), Ford Motor Company and Samsung (Liberty Tech).
+
+  * Keen user of backlogs and todo lists
+
+  * Really thinks that Agile is the new Waterfall (I can explain why :) ).
+
+  * Morning thinker, afternoon doer. 
+
+
+╔═══════╗
+║ NOTES ║
+╚═══════╝
+
+  * The easiest way to catch me is via my email (rodrigo.pitta@gmail.com)
+
+  * I do have a website (http://rodderscode.co.uk)
+
+  * This CV was purposely made in ASCII so that it fits into every single upload form on the internet (and mess up recruiters standard software) and also because it looks “retro” and cool.  
+
+
+

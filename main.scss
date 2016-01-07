@@ -14,7 +14,7 @@ body {
 }
 
 .bg1 {
-	background-image: url('londonSkyline.jpg');
+	background-image: url('imgs/londonSkyline.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: 100% 100%;
@@ -36,8 +36,9 @@ body {
 			margin-right: 1em;
 			line-height: 3.5em;
 			a {
+				background-color:purple;
 				:hover {
-					background-color:purple;	
+					
 				}
 				.navitem {
 					width: 100px;
