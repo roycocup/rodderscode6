@@ -1,0 +1,44 @@
+// Browser Prefixes
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+
+// Rotate
+@mixin rotate ($deg) { 
+	@include transform(rotate(#{$deg}deg));
+}
+
+// Scale
+@mixin scale($scale) {
+	@include transform(scale($scale));
+}
+
+// Translate
+@mixin translate ($x, $y) {
+	@include transform(translate($x, $y));
+}
+
+// Skew
+@mixin skew ($x, $y) {
+	@include transform(skew(#{$x}deg, #{$y}deg));
+}
+
+// Transform Origin
+@mixin transform-origin ($origin) {
+    	-webkit-transform-origin: $origin;
+    	-moz-transform-origin: $origin;
+	-ms-transform-origin: $origin;
+	transform-origin: $origin;
+}
+
+// will make a linear grading 
+// first param can take angle or place... eg, left or 45deg
+@mixin linearGradient($angle, $startColor, $midColor, $endColor){
+	background-image: -webkit-linear-gradient($angle, $startColor, $midColor, $endColor);
+	background-image: -moz-linear-gradient($angle, $startColor, $midColor, $endColor);
+	background-image: -ms-linear-gradient($angle, $startColor, $midColor, $endColor);
+	background-image: -o-linear-gradient($angle, $startColor, $midColor, $endColor);
+}
