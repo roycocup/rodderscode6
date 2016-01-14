@@ -55,7 +55,7 @@
 
 
 	<!-- Bio -->
-	<div class="container bio">
+	<div class="container bio wow slideInLeft" data-wow-duration="1s">
 		<b>Bio</b> 
 		I am a passionate programming enthusiast always looking for the latest technology which can bring us the best and easiest solutions. 
 		<br> 
@@ -177,21 +177,232 @@
 				</div>
 			</div>
 		</div>
-		
+	</div>
+
+	<hr class="soft">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<h3>Facebook page</h3>
+				<p>Check out my facebook page</p>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<h3>Video on a wordpress job</h3>
+				<p>In 2013 I did a video after finishing a project for a client. This was quite a good piece of software and it was a lot of work.
+					So <a href="https://youtu.be/e4dixUL55bA">here</a> it is.</p>
+			</div>
+			<div class="col-sm-12 col-md-4 col-lg-4">
+				<ul>
+					<li>Project needs new functionality?</li>
+					<li>The programmer left halfway the project?</li>
+					<li>An old project has a bug?</li>
+				</ul>
+				
+
+				<h4>I specialise in Legacy Projects</h4>
+				<p>Throughout my career I dealt with many legacy projects. Some were more complicated 
+				than others but they all had something in common - no standards. </p>
+				<p>Standards play a very important part in the project as both documentation and the code itself becoming easier 
+				to understand and fix </p>
+				<p>I follow a simple process to deal with such projects :</p>
+
+				<ol>
+					<li>All code will go into version control.</li>
+					<li>Identify the part of the project that needs change.</li>
+					<li>Document the code.</li>
+					<li>Setup a staging / sandbox server.</li>
+					<li>Test / Refactor. </li>
+					<li>Deploy.</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+
+	<hr class="soft">
+
+	<div class="container">
+		<div class="row">
+			<h3>Im a ZCE</h3>
+			<p>ZCE stands for Zend Certified Engineer. 
+			I'm happy to say that I belong to the group of only just over 6000 PHP programmers in the world to hold such certificate. 
+			Click <a href="http://www.zend.com/en/yellow-pages#show-ClientCandidateID=ZEND012822">here</a> to see my profile in Zend Yellow Pages. </p>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<h3>Skillset</h3>
+			
+			
+			<style>
+				.mainwrapper{position: absolute; margin-left: 30px; }
+				.chart{float: left; }
+				.blue{border-radius: 50%; width: 10px; height: 10px; background-color: rgb(47,89,162); margin-right: 5px;}
+				.green{border-radius: 50%; width: 10px; height: 10px; background-color: rgb(86,153,63); margin-right: 5px;}
+				.next div{float: left;}
+				.clear{clear: both; padding-top: 50px;}
+				.title{font-family: arial; font-size: 0.8em; }
+			</style>
+
+			<div id="charts" class="mainwrapper wow slideInLeft">
+				<!-- Bar Charts -->
+				<div class="chart">
+					<div class="title">Languages</div>
+					<div>
+						<canvas id="bars1" width="300" height="200"></canvas>	
+					</div>
+				</div>
+				<div class="chart">
+					<div class="title">Frameworks</div>
+					<div>
+						<canvas id="bars2" width="300" height="200"></canvas>	
+					</div>
+				</div>
+
+				<div class="clear"></div>
+
+
+				<!-- Circles -->
+				<div class="chart">
+					<div class="next">
+						<div class="blue"></div><span class="title">IIS</span>
+						<br>
+						<div class="green"></div><span class="title">Apache</span>
+					</div>
+					<div>
+						<canvas id="myChart" width="200" height="150"></canvas>	
+					</div>
+				</div>
+
+				<div class="chart">
+					<div class="next">
+						<div class="blue"></div><span class="title">Mysql</span>
+						<br>
+						<div class="green"></div><span class="title">MsSQL</span>
+					</div>
+					<div>
+						<canvas id="myChart2" width="200" height="150"></canvas>	
+					</div>
+				</div>
+
+
+				<div class="chart">
+					<div class="next">
+						<div class="blue"></div><span class="title">Subversion</span>
+						<br>
+						<div class="green"></div><span class="title">Git</span>
+					</div>
+					<div>
+						<canvas id="myChart3" width="200" height="150"></canvas>	
+					</div>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 
 
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>    
 	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower_components/Chart.js/Chart.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
 
-	<script> 
-	    function include(el, filename){
-	    	$(el).load(filename);
-	    }
-
+	<script>
+		// Carousel loading 
+	    function include(el, filename){ $(el).load(filename);}
 	    // include("#carousel1", "carousel.html");
+
+	    // Loading Wow 
+	    new WOW().init();
     </script>
+
+
+    <script type="text/javascript">
+    	var chartsAnimated = false;
+    	var animateCharts = function(){
+			//bar charts
+			var ctx = $("#bars1").get(0).getContext("2d");
+			var data = {
+				labels : ["PHP","Java","JS","Python","C","Go"],
+				datasets : [{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : [99,75,60,50,40,10]
+				}]
+			}
+			new Chart(ctx).Bar(data,options);
+
+			//Frameworks
+			var ctx = $("#bars2").get(0).getContext("2d");
+			var data = {
+				labels : ['Custom PHP', 'Laravel', 'Codeigniter', 'Yii', 'Wordpress', 'Mod-x', 'Drupal', 'Symphony', 'Zend', 'Joomla'],
+				datasets : [{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					data : [99,85,83,80,80,50,40,35,30,10]
+				}]
+			}
+			new Chart(ctx).Bar(data,options);
+
+
+			//Web servers
+			var ctx = $("#myChart").get(0).getContext("2d");
+
+			var data = [
+			{value: 60,color:"rgb(86,153,63)", label : '60%',labelColor : 'white',labelFontSize : '10'},
+			{value : 40,color : "rgb(47,89,162)", label : '40%',labelColor : 'white',labelFontSize : '10'},
+			];
+			var options = {animationEasing : "easeOutQuart"}
+			new Chart(ctx).Pie(data, options);
+
+			//databases
+			var ctx = $("#myChart2").get(0).getContext("2d");
+			var data = [
+			{value: 44,color:"rgb(86,153,63)", label : '44%',labelColor : 'white',labelFontSize : '10'},
+			{value : 56,color : "rgb(47,89,162)", label : '56%',labelColor : 'white',labelFontSize : '10'},
+			];
+			var options = {animationEasing : "easeOutQuart"}
+			new Chart(ctx).Pie(data, options);
+
+
+			//version control
+			var ctx = $("#myChart3").get(0).getContext("2d");
+			var data = [
+			{value: 40,color:"rgb(86,153,63)", label : '40%',labelColor : 'white',labelFontSize : '10'},
+			{value : 60,color : "rgb(47,89,162)", label : '60%',labelColor : 'white',labelFontSize : '10'},
+			];
+			var options = {animationEasing : "easeOutQuart"}
+			new Chart(ctx).Pie(data, options); 
+			chartsAnimated = true;
+		}		
+    </script>
+
+	<script>
+	var listen = function(id){
+		var element = document.getElementById(id);
+		var position = element.getBoundingClientRect();
+		var divY = position.top;
+		var triggerAt = divY - (position.height/2); //half way through the div
+		console.log(position);
+		setInterval(function(){
+			var y = window.pageYOffset;
+			console.log("Y: " + y + " | triggerAt: " + triggerAt + " | divY: " + divY);
+			if ( y >= triggerAt ){
+				if (!chartsAnimated)
+					animateCharts();
+			}
+		}, 500);
+	}
+	</script>
+
+	<script>
+		jQuery(document).ready(function($) {
+			listen("charts");
+		});
+	</script>
 	
   
 </body>
