@@ -14,9 +14,10 @@
 </head>
 
 <body>
-
+	
+	<!-- Nav -->
 	<div id="header" class="bg1">
-		<div class="nav">
+		<div id="mmenu" class="nav">
 			<div class="logo">
 				<img src="" alt=""> 
 			</div>
@@ -30,6 +31,7 @@
 			<img src="imgs/me2.jpg" class="img-circle imgme">
 			<div id="headertext">
 				<div id="htname">Rodrigo Dias</div>
+				<div id="htdesc">Developer</div>
 				<div id="htem"><a mailto:"rodrigo@rodderscode.co.uk">rodrigo@rodderscode.co.uk</a></div>
 				<div id="icons">
 					<div class="svgico">
@@ -79,6 +81,7 @@
 			<div class="timelineitem">
 				<div class="tdate">Winter 2015</div>
 				<div class="ttitle">Java Development</div>
+				<div class="tdesc">Reading and developing in JavaSE and Android</div>
 			</div>
 			<div class="timelineitem">
 				<div class="tdate">2014-2015</div>
@@ -104,10 +107,10 @@
 
 	<hr class="soft">
 
+	<!-- work in progress -->	
 	<div class="container">
 		<h2>In Progress</h2>
 		<div class="row">
-
 			<div class="col-md-4" id="lffapp">
 				<div class="text-column">
 					<a href="https://github.com/roycocup/LFFApp">
@@ -144,8 +147,10 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
+		
+	
+	
 
 	<hr class="soft">
 
@@ -181,24 +186,22 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-4 col-lg-4">
+			<div class="col-md-4">
 				<h3>Facebook page</h3>
 				<p>Check out my facebook page</p>
 			</div>
-			<div class="col-sm-12 col-md-4 col-lg-4">
+			<div class="col-md-4">
 				<h3>Video on a wordpress job</h3>
 				<p>In 2013 I did a video after finishing a project for a client. This was quite a good piece of software and it was a lot of work.
 					So <a href="https://youtu.be/e4dixUL55bA">here</a> it is.</p>
 			</div>
-			<div class="col-sm-12 col-md-4 col-lg-4">
+			<div class="col-md-4">
+				<h3>I specialise in Legacy Projects</h3>
 				<ul>
 					<li>Project needs new functionality?</li>
 					<li>The programmer left halfway the project?</li>
 					<li>An old project has a bug?</li>
 				</ul>
-				
-
-				<h4>I specialise in Legacy Projects</h4>
 				<p>Throughout my career I dealt with many legacy projects. Some were more complicated 
 				than others but they all had something in common - no standards. </p>
 				<p>Standards play a very important part in the project as both documentation and the code itself becoming easier 
@@ -219,83 +222,70 @@
 
 	<hr class="soft">
 
+	
 	<div class="container">
 		<div class="row">
-			<h3>Im a ZCE</h3>
-			<p>ZCE stands for Zend Certified Engineer. 
-			I'm happy to say that I belong to the group of only just over 6000 PHP programmers in the world to hold such certificate. 
-			Click <a href="http://www.zend.com/en/yellow-pages#show-ClientCandidateID=ZEND012822">here</a> to see my profile in Zend Yellow Pages. </p>
-		</div>
-	</div>
+			<div class="col-md-8">
+				<h3>Skillset</h3>
+				<div id="charts" class="mainwrapper wow slideInLeft">
+					<!-- Bar Charts -->
+					<div class="chart">
+						<div class="title">Languages</div>
+						<div>
+							<canvas id="bars1" width="300" height="200"></canvas>	
+						</div>
+					</div>
+					<div class="chart">
+						<div class="title">Frameworks</div>
+						<div>
+							<canvas id="bars2" width="300" height="200"></canvas>	
+						</div>
+					</div>
+
+					<div class="clear"></div>
 
 
-	<div class="container">
-		<div class="row">
-			<h3>Skillset</h3>
-			
-			
-			<style>
-				.mainwrapper{position: absolute; margin-left: 30px; }
-				.chart{float: left; }
-				.blue{border-radius: 50%; width: 10px; height: 10px; background-color: rgb(47,89,162); margin-right: 5px;}
-				.green{border-radius: 50%; width: 10px; height: 10px; background-color: rgb(86,153,63); margin-right: 5px;}
-				.next div{float: left;}
-				.clear{clear: both; padding-top: 50px;}
-				.title{font-family: arial; font-size: 0.8em; }
-			</style>
+					<!-- Circles -->
+					<div class="chart">
+						<div class="next">
+							<div class="blue"></div><span class="title">IIS</span>
+							<br>
+							<div class="green"></div><span class="title">Apache</span>
+						</div>
+						<div>
+							<canvas id="myChart" width="200" height="150"></canvas>	
+						</div>
+					</div>
 
-			<div id="charts" class="mainwrapper wow slideInLeft">
-				<!-- Bar Charts -->
-				<div class="chart">
-					<div class="title">Languages</div>
-					<div>
-						<canvas id="bars1" width="300" height="200"></canvas>	
+					<div class="chart">
+						<div class="next">
+							<div class="blue"></div><span class="title">Mysql</span>
+							<br>
+							<div class="green"></div><span class="title">MsSQL</span>
+						</div>
+						<div>
+							<canvas id="myChart2" width="200" height="150"></canvas>	
+						</div>
+					</div>
+
+
+					<div class="chart">
+						<div class="next">
+							<div class="blue"></div><span class="title">Subversion</span>
+							<br>
+							<div class="green"></div><span class="title">Git</span>
+						</div>
+						<div>
+							<canvas id="myChart3" width="200" height="150"></canvas>	
+						</div>
 					</div>
 				</div>
-				<div class="chart">
-					<div class="title">Frameworks</div>
-					<div>
-						<canvas id="bars2" width="300" height="200"></canvas>	
-					</div>
-				</div>
-
-				<div class="clear"></div>
-
-
-				<!-- Circles -->
-				<div class="chart">
-					<div class="next">
-						<div class="blue"></div><span class="title">IIS</span>
-						<br>
-						<div class="green"></div><span class="title">Apache</span>
-					</div>
-					<div>
-						<canvas id="myChart" width="200" height="150"></canvas>	
-					</div>
-				</div>
-
-				<div class="chart">
-					<div class="next">
-						<div class="blue"></div><span class="title">Mysql</span>
-						<br>
-						<div class="green"></div><span class="title">MsSQL</span>
-					</div>
-					<div>
-						<canvas id="myChart2" width="200" height="150"></canvas>	
-					</div>
-				</div>
-
-
-				<div class="chart">
-					<div class="next">
-						<div class="blue"></div><span class="title">Subversion</span>
-						<br>
-						<div class="green"></div><span class="title">Git</span>
-					</div>
-					<div>
-						<canvas id="myChart3" width="200" height="150"></canvas>	
-					</div>
-				</div>
+			</div>
+			<div class="col-md-4">
+				<h3>Im a ZCE</h3>
+				<p>ZCE stands for Zend Certified Engineer. 
+				I'm happy to say that I belong to the group of only just over 6000 PHP programmers in the world to hold such certificate. 
+				Click <a href="http://www.zend.com/en/yellow-pages#show-ClientCandidateID=ZEND012822">here</a> to see my profile in Zend Yellow Pages. </p>
 			</div>
 
 		</div>
@@ -384,20 +374,28 @@
 		var position = element.getBoundingClientRect();
 		var divY = position.top;
 		var triggerAt = divY - (position.height/2); //half way through the div
-		console.log(position);
 		setInterval(function(){
 			var y = window.pageYOffset;
 			if ( y >= triggerAt ){
-				if (!chartsAnimated)
+				if ( id == "charts" && !chartsAnimated )
 					animateCharts();
 			}
-		}, 500);
+			
+		}, 250);
 	}
+
+	// TODO: Must deal with the scrolling for the header
+	// var listenToHeader = function(){
+	// 	if ( !$("#mmenu").hasClass("scrolling") ){
+	// 		$("#mmenu").addClass("scrolling");
+	// 	}
+	// }
 	</script>
 
 	<script>
 		jQuery(document).ready(function($) {
 			listen("charts");
+			listenToHeader();
 		});
 	</script>
 	

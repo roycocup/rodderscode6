@@ -1,0 +1,32 @@
+.mainwrapper{
+	position: absolute; 
+	margin-left: 30px; 
+}
+.chart{
+	float: left; 
+}
+.blue{
+	border-radius: 50%; 
+	width: 10px; 
+	height: 10px;
+	background-color: rgb(47,89,162);
+	margin-right: 5px;
+}
+.green{
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: rgb(86,153,63);
+	margin-right: 5px;
+}
+.next div{
+	float: left;
+}
+.clear{
+	clear: both;
+	padding-top: 50px;
+}
+.title{
+	font-family: arial;
+	font-size: 0.8em;
+}
