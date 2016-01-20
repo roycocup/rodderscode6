@@ -4,17 +4,18 @@ if( w > 768) {
 	new WOW().init();
 
 	//Loading fullpage 
+	var sections = ['home', 'bio', 'timeline', 'work', 'past', 'other', 'skillset'];
 	$('#fullpage').fullpage({
 			//Navigation
-			// menu: '#menu',
+			// menu: '#mmenu',
 			// lockAnchors: false,
-			// anchors:['firstPage', 'secondPage'],
-			// navigation: false,
-			// navigationPosition: 'right',
-			// navigationTooltips: ['firstSlide', 'secondSlide'],
-			// showActiveTooltip: false,
-			// slidesNavigation: true,
-			// slidesNavPosition: 'bottom',
+			// anchors: sections,
+			navigation: true,
+			navigationPosition: 'right',
+			navigationTooltips: sections,
+			showActiveTooltip: true,
+			slidesNavigation: false,
+			slidesNavPosition: 'top',
 
 			//Scrolling
 			// css3: true,
@@ -139,11 +140,5 @@ var listen = function(id){
 $(document).ready(function($) {
 	listen("charts");
 
-	$(window).scroll(function(){        
-		if ($(window).scrollTop() > 10) 
-			$("#mmenu").addClass("scrolling");
-		else 
-			$("#mmenu").removeClass("scrolling");
-	});
 });
 	

@@ -1,41 +1,8 @@
 // Large screen 
 @media (min-width: 768px) {
-	.nav{
-		height:50px;
-		background-color:rgba(0,0,0,0);
-		width:100%;
-		position:fixed;
-		z-index: 100;
-		li {
-			display: inline;	
-		}
-		.navitems {
-			position: absolute; 
-			right: 5px;
-			line-height: 3.5em;
-			.navitem {
-				width: 100px;
-				font-size: 1.2em;
-				padding-right: 5em;
-				text-decoration: none;
-				a{
-					color: #ccc;
-					text-decoration: none;
-					&:hover {
-						border-bottom: 1px solid red; 
-					}	
-				}
-			}
-		}
-		
-	}
+	
 }
 
-//class for when user is scrolling
-.nav.scrolling{
-	background-color: black;
-	height: 50px;
-}
 
 // small screen
 @media (max-width: 768px) {
