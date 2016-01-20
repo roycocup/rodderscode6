@@ -43,16 +43,11 @@ if( w > 768) {
 			controlArrows: true,
 			verticalCentered: true,
 			resize : false,
-			// sectionsColor : ['#ccc', '#fff'],
-			// paddingTop: '3em',
-			// paddingBottom: '10px',
-			// fixedElements: '#header, .footer',
-			// responsiveWidth: 0,
-			// responsiveHeight: 0,
 
 			//Custom selectors
 			sectionSelector: 'section',
 			slideSelector: '.slide',
+			sectionsColor: ['black', '#4BBFC3', '#7BAABE', '#f2f2f2', '#000', '#0FB5B3', ''],
 
 			//events
 			onLeave: function(index, nextIndex, direction){},

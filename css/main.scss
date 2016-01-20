@@ -24,34 +24,9 @@ h2 {
 	padding: 40px 0px 60px;
 }
 
-hr.soft {
-	border: 0;
-	height: 1px;
-	padding: 0;
-	margin: 0;
-	@include linearGradient(left, #ccc, $brown, #ccc);
-}
-
-@media (min-width: 768px) {
-	section {
-		// $( window ).height()
-		height:100vh;
-		&.blue{
-			background-color: $another-blue;
-			color:white;	
-		}
-	}
-}
-
-
-
-.container{
-	margin-top:50px;
-	margin-bottom:50px;
-	&.bio{
-		font-size:18px; 
-		font-weight:300;
-	}
+.bio{
+	font-size:18px; 
+	font-weight:300;
 }
 
 .text-column {
