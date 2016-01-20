@@ -1,2 +1,2 @@
-.mainwrapper{position:absolute;margin-left:30px}.chart{float:left}.blue{border-radius:50%;width:10px;height:10px;background-color:#2f59a2;margin-right:5px}.green{border-radius:50%;width:10px;height:10px;background-color:#56993f;margin-right:5px}.next div{float:left}.clear{clear:both;padding-top:50px}.title{font-family:arial;font-size:0.8em}
+.mainwrapper{position:absolute;margin-left:30px}.chart{float:left}.chart.blue{border-radius:50%;width:10px;height:10px;background-color:#2f59a2;margin-right:5px}.chart.green{border-radius:50%;width:10px;height:10px;background-color:#56993f;margin-right:5px}.chart.next div{float:left}.chart.clear{clear:both;padding-top:50px}.chart.title{font-family:arial;font-size:0.8em}
 /*# sourceMappingURL=charts.css.map */

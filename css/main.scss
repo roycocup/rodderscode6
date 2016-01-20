@@ -32,11 +32,15 @@ hr.soft {
 	@include linearGradient(left, #ccc, $brown, #ccc);
 }
 
-section {
-	// $( window ).height()
-	height:100vh;
-	background-color: $another-blue;
-	color:white;
+@media (min-width: 768px) {
+	section {
+		// $( window ).height()
+		height:100vh;
+		&.blue{
+			background-color: $another-blue;
+			color:white;	
+		}
+	}
 }
 
 
