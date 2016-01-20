@@ -136,9 +136,17 @@ var listen = function(id){
 	}, 250);
 }
 
+var maze = function(e){
+	for (var i=0;i<1800;i++) {
+	  document.getElementById(e).innerHTML += (Math.random() > 0.5) ? '\u27CB' : '\u27CD';
+	  // document.getElementById(e).innerHTML+= (Math.random() > 0.5) ? '\\' : '/';
+	  //document.getElementById($e).innerHTML += "/";
+	  // document.getElementById(e).innerHTML += (205.5+Math.random(1));
+	}
+}
 
 $(document).ready(function($) {
 	listen("charts");
-
+	// maze("header");
 });
 	
