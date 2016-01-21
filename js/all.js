@@ -1,10 +1,32 @@
+
+function hasClass(ele,cls) {
+	return ele.className.match(new RegExp('(\\s|^)'+cls+'(\\s|$)'));
+}
+ 
+function addClass(ele,cls) {
+	if (!this.hasClass(ele,cls)) ele.className += " "+cls;
+}
+ 
+function removeClass(ele,cls) {
+	if (hasClass(ele,cls)) {
+    	var reg = new RegExp('(\\s|^)'+cls+'(\\s|$)');
+		ele.className=ele.className.replace(reg,' ');
+	}
+}
+
+
+
+
 var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 if( w > 768) { 
 	// Loading Wow 
 	new WOW().init();
 
 	//Loading fullpage 
-	var sections = ['home', 'bio', 'timeline', 'work', 'past', 'other', 'skillset'];
+	var sections = 
+		['home', 'bio', 'timeline', 'work', 'past', 'other', 'skillset'];
+	var animated_sections = 
+		['home_animated', 'bio_animated', 'timeline_animated', 'work_animated', 'past_animated', 'other_animated', 'skillset_animated'];
 	$('#fullpage').fullpage({
 			//Navigation
 			// menu: '#mmenu',
@@ -38,27 +60,61 @@ if( w > 768) {
 			//Accessibility
 			keyboardScrolling: true,
 			animateAnchor: true,
-			recordHistory: true,
+			recordHistory: false,
 
 			//Design
 			controlArrows: true,
 			verticalCentered: true,
-			resize : false,
+			resize : true,
 
 			//Custom selectors
 			sectionSelector: 'section',
 			slideSelector: '.slide',
-			sectionsColor: ['black', '#4BBFC3', '#7BAABE', '#f2f2f2', '#000', '#0FB5B3', ''],
+			sectionsColor: ['black', '#4BBFC3', '#7BAABE', '#46433A', '#242729', '#CE534D', '#8E4423'],
 
 			//events
-			onLeave: function(index, nextIndex, direction){},
-			afterLoad: function(anchorLink, index){},
+			onLeave: function(index, nextIndex, direction){
+				//hide before animating
+				var ele = document.getElementById(animated_sections[nextIndex-1]);
+				if(ele != null){
+					//only hide if it hasnt been animated already
+					if (!hasClass(ele, 'animated'))
+						addClass( ele , ' invisible ');
+				}
+			},
+			afterLoad: function(anchorLink, index){
+				//trigger animations
+				switch (sections[index-1]){
+					case "bio":
+						var ele = document.getElementById(animated_sections[index-1]);
+						removeClass(ele,'invisible') 
+						addClass(ele, ' animated slideInUp ');
+					break;
+					// case "timeline":
+					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
+					// break;
+					// case "work":
+					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
+					// break;
+					// case "past":
+					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
+					// break;
+					// case "other":
+					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
+					// break;
+					// case "skillset":
+					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
+					// break;
+				}
+				
+			},
 			afterRender: function(){},
 			afterResize: function(){},
 			afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
 			onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
 		});
 }
+
 
 /* Charts */
 

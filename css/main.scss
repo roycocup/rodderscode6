@@ -8,7 +8,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Roboto', sans-serif;
-	color: $brown;
+	color: white;
 }
 
 
@@ -16,6 +16,9 @@ body {
 @import "timeline.css";
 @import "charts.css";
 
+.invisible {
+	opacity(0);
+}
 
 h2 {
 	text-align: center;
