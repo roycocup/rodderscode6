@@ -88,7 +88,7 @@ if( w > 768) {
 					case "bio":
 						var ele = document.getElementById(animated_sections[index-1]);
 						removeClass(ele,'invisible') 
-						addClass(ele, ' animated slideInUp ');
+						addClass(ele, ' animated slideInLeft ');
 					break;
 					// case "timeline":
 					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');

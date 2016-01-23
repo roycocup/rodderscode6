@@ -22,10 +22,10 @@
   font-weight: 300;
   color: white;
   margin-bottom: 40px;
-  background-image: url("../imgs/jp2.jpg");
+  background-image: url("../imgs/buses.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 100% 100vh; }
+  background-size: 100% 150vh; }
 
 #headerblob {
   position: absolute;
