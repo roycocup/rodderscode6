@@ -23,10 +23,8 @@ if( w > 768) {
 	new WOW().init();
 
 	//Loading fullpage 
-	var sections = 
-		['home', 'bio', 'timeline', 'work', 'past', 'other', 'skillset'];
-	var animated_sections = 
-		['home_animated', 'bio_animated', 'timeline_animated', 'work_animated', 'past_animated', 'other_animated', 'skillset_animated'];
+	var sections = ['home', 'bio', 'timeline', 'work', 'past', 'other', 'skillset'];
+	var animated_sections = ['home_animated', 'bio_animated', 'timeline_animated', 'work_animated', 'past_animated', 'other_animated', 'skillset_animated'];
 	$('#fullpage').fullpage({
 			//Navigation
 			// menu: '#mmenu',
@@ -70,7 +68,9 @@ if( w > 768) {
 			//Custom selectors
 			sectionSelector: 'section',
 			slideSelector: '.slide',
-			sectionsColor: ['black', '#4BBFC3', '#7BAABE', '#46433A', '#242729', '#CE534D', '#8E4423'],
+			// azul-bebe - '#4BBFC3', azul-mate - '#7BAABE', greyish - '#46433A', dark grey -'#242729', red - '#CE534D'
+				
+			sectionsColor: ['', '#7BAABE', '#7BAABE', '#7BAABE', '#7BAABE', '#7BAABE', '#7BAABE'],
 
 			//events
 			onLeave: function(index, nextIndex, direction){
@@ -102,9 +102,10 @@ if( w > 768) {
 					// case "other":
 					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
 					// break;
-					// case "skillset":
-					// 	addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
-					// break;
+					case "skillset":
+						//addClass(document.getElementById(animated_sections[index-1]), 'animated fadeIn');
+					animateCharts();
+					break;
 				}
 				
 			},
